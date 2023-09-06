@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-------CSS File-------->
+    <link rel="stylesheet" href="style.css">
+
+    <!-------Font Awesome CDN-------->
+    <script src="https://kit.fontawesome.com/a5720a9deb.js" crossorigin="anonymous"></script>
+    
+    <!-------Animation On Scroll---------->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <!-------------------Navbar---------------------->
+    <div class="nav">
+        <h1>SB Fitness Hub</h1>
+        <ul id="item">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#classes">Classes</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+            <div class="icon">
+                <a href="https://www.instagram.com/sb_fitness_hub_chiplun/" target="_blank"><i class="fa-brands fa-instagram"></i></a>   
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </ul>
+        <i id="menu-bar" class="fa-solid fa-bars"></i>
+    </div>
+
+    <!------------------Hero Section----------------->
+    <div id="home" class="back-img">
+        <div class="overlay">
+        </div>
+    </div>
+
+    <div class="img-text">
+        <p>new way to build a healthy lifestyle</p>
+        <h2>UPGRADE YOUR BODY AT <br> SB FITNESS HUB</h2>
+        <div class="btn">
+            <a href="#learnMore">Learn More</a>
+        </div>
+    </div>
+
+    <div class="details" id="learnMore">
+        <div class="one" data-aos="fade-up">
+            <h3>New to the SB Fitness Hub?</h3>
+            <h6>Your membership is up to 1 month free(800Rs per month)</h6>
+            <a href="#contact">Become a member today</a>
+        </div>
+        <div class="two" data-aos="fade-up">
+            <h3>Working hours</h3>
+            <br>
+            <h5>Sunday : Closed</h5>
+            <h5>Monday - Saturday</h5>
+            <p>6:00 AM - 10:00 PM</p>
+        </div>
+    </div>
+
+    <!-----------------Trainer Section----------------->
+
+    <div id="about" class="trainer">
+        <div class="about" data-aos="fade-up">
+            <h2>Hello, we are SB Fitness Hub</h2>
+            <p>A personal trainer is an individual who has earned a certification that demonstrates they have achieved a
+                level of competency for creating and delivering safe and effective exercise programs for apparently
+                healthy individuals and groups.
+                <br>
+                <br>
+                They motivate clients by collaborating to set goals, providing meaningful feedback, and by being a
+                reliable source for accountability. Thank you.
+            </p>
+        </div>
+        <div class="people" data-aos="fade-up">
+            <div class="trainer-one">
+                <div class="img">
+                    <img src="./images/SB.jpg" alt="">
+                </div>
+                <div class="trainer-details">
+                    <div class="name">
+                        <h4>Suhas Bhosale</h4>
+                        <a href="https://www.instagram.com/suhasbhosale.123/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <!-- <i class="fa-brands fa-instagram"></i> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="trainer-one">
+                <div class="img">
+                    <img src="./images/Sangram.jpg" alt="">
+                </div>
+                <div class="trainer-details">
+                    <div class="name">
+                        <h4>Sangram Pashte</h4>
+                        <a href="https://www.instagram.com/sangram_pashte/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <!-- <i class="fa-brands fa-instagram"></i> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------Classes Section--------------------->
+    <div id="classes" class="class">
+        <p data-aos="fade-up" class="paragraph">Get a Perfect Body</p>
+        <h2 data-aos="fade-up" class="heading">Our Training Classes</h2>
+
+        <div class="classmenu">
+            <div class="trainer-one" data-aos="fade-up">
+                <div class="img">
+                    <img src="./images/Yoga.PNG" alt="">
+                </div>
+                <div class="trainer-details">
+                    <div class="name">
+                        <div class="nameDetails">
+                            <h4>Yoga</h4>
+                            <p>Trained By - <span>Sangram Pashte</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="trainer-one" data-aos="fade-up">
+                <div class="img">
+                    <img src="./images/cardio2.jpg" alt="">
+                </div>
+                <div class="trainer-details">
+                    <div class="name">
+                        <div class="nameDetails">
+                            <h4>Cardio</h4>
+                            <p>Trained By - <span>Suhas Bhosale</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="trainer-one" data-aos="fade-up">
+                <div class="img">
+                    <img src="./images/Zumba1.jpg" alt="">
+                </div>
+                <div class="trainer-details">
+                    <div class="name">
+                        <div class="nameDetails">
+                            <h4>Zumba</h4>
+                            <p>Trained By - <span>Sangram Pashte</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------Contact Form-------------------->
+
+    <div id="contact" class="contact">
+        <div class="form">
+            <h2 data-aos="fade-up">Feel free to ask anything</h2>
+            <div data-aos="fade-up" class="submit">
+                <input type="text" placeholder="Name" name="">
+                <input type="text" placeholder="Email" name="">
+                <textarea name="" placeholder="Message" cols="50" rows="5"></textarea>
+                <a href="#">Sent Message</a>
+            </div>
+        </div>
+
+        <div class="map" data-aos="fade-up">
+            <h2>Where you can find us</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.6434176529647!2d73.53036361470528!3d17.524527287996452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc20732067d62d3%3A0xe1cedf1ea9eabbaf!2sS%20B%20FITNESS%20HUB!5e0!3m2!1sen!2sin!4v1678866933384!5m2!1sen!2sin"
+                width="1290" height="310" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <!--------------------Footer Section------------------------->
+
+    <div class="footer">
+        Copyright &copy; SB Fitness Hub. All Rights Reserved
+    </div>
+
+    <!-------JS File-------->
+    <script src="script.js"></script>   
+
+    <!----------Animation On Scroll------------>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset: 200,
+        duration: 1000,
+    });
+  </script>
+</body>
+
+</html>

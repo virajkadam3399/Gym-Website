@@ -1,0 +1,887 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/****************Hero Section*********************/
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(66, 65, 65);
+    width: 100%;
+    padding: 1rem 6.5rem;
+    z-index: 1000;
+    position: fixed;
+}
+
+.nav h1{
+    color: white;
+    font-size: 1.7rem;
+}
+
+.back-img{
+    background-image: url(./images/Heroimg.PNG);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    z-index: -1;
+}
+
+#item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#item li{
+    list-style: none;
+    padding-right: 50px;
+}
+
+#item li a{
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+#item li a:hover,#item .icon i:hover{
+    color:orangered;
+    cursor: pointer;
+}
+
+#item .icon i{
+    color: white;
+    padding-right: 30px;
+    font-weight: bold;
+}
+
+.back-img .overlay{
+    background: rgb(23, 24, 25);
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+}
+
+.img-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.img-text p{
+    font-size: 1.3rem;
+    color: rgb(173, 173, 173);
+    margin-bottom: 1.4rem;
+}
+
+.img-text h2{
+    color: white;
+    font-size: 3rem;
+}
+
+.img-text .btn{
+    margin-top: 2rem;
+}
+
+.img-text .btn a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: orangered;
+    border: 1px solid orangered;
+    border-radius: 3px;
+    font-weight: 500;
+    padding: 0.9rem 1.6rem;
+
+}
+
+.img-text .btn a:hover{
+    background: white;
+    border: 1px solid white;
+}
+
+.details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 8rem 15rem;
+    background: rgb(66, 65, 65);
+}
+
+.details h3,h5,h6{
+    color: white;
+}
+
+.details .one{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.details .one h3{
+    font-size: 2.1rem;
+    padding-bottom: 1.1rem;
+}
+
+.details .one h6{
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding-bottom: 1.2rem;
+}
+
+.details .one a{
+    color: white;
+    background: orangered;
+    padding: 1rem 0;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 3px;
+
+}
+
+.details .one a:hover{
+    background:white;
+    color: orangered;
+}
+.details .two{
+    width: 45%;
+    border-left: 1px solid lightgrey;
+    padding-left: 4rem;
+}
+
+.details .two h3{
+    font-size: 2.2rem;
+}
+
+.details .two h5{
+    font-size: 1.1rem;
+}
+
+.details .two p{
+    font-size: 1.1rem;
+    color: rgb(173, 173, 173);
+}
+
+/*******************Trainer Section************************/
+.trainer{
+    background: white;
+    padding: 128px 128px 80px 128px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trainer .about{
+    width: 39%;
+}
+
+.trainer .about h2{
+    color:black;
+    font-size: 2.1rem;
+    padding-bottom: 1.8rem;
+}
+
+.trainer .about p{
+    color: gray;
+    font-size: 1.1rem;
+}
+
+.trainer .people{
+    width: 57%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.trainer .people .trainer-one{
+    width: 45%;
+    height: auto;
+    box-sizing: border-box;
+    background: white;
+    box-shadow: 3px 3px 6px lightgray;
+}
+
+.trainer .people .trainer-one .img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.trainer .people .trainer-one .name{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 20px 0px 20px;
+}
+
+.trainer .people .trainer-one .name h4{
+    font-size: 1.5rem;
+    color: black;
+}
+
+.trainer .people .trainer-one .name i{
+    font-size: 1.3rem;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.trainer .people .trainer-one .trainer-details{
+    padding-bottom: 10px;
+}
+
+/***********Classes Section ****************/
+.class{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7rem 8rem;
+}
+
+.class .paragraph{
+    font-size: 1.3rem;
+    color: gray;
+    padding: 6px;
+    text-align: center;
+}
+
+.class .heading{
+    font-size: 2.2rem;
+    color: black;
+    font-weight: 700;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.class .classmenu .trainer-one{
+    width: 32%;
+    height: auto;
+    box-sizing: border-box;
+    background: white;
+    box-shadow: 3px 3px 6px lightgray;
+}
+
+.class .classmenu .trainer-one .img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.class .classmenu .trainer-one .name{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 20px 0px 20px;
+}
+
+.class .classmenu .trainer-one .name h4{
+    font-size: 1.5rem;
+    color: black;
+}
+
+.class .classmenu .trainer-one .name i{
+    font-size: 1.3rem;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.class .classmenu .trainer-one .trainer-details{
+    padding-bottom: 10px;
+}
+
+.class .classmenu .trainer-one .trainer-details .name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.class .classmenu .trainer-one .trainer-details .nameDetails h4{
+    font-size: 1.7rem;
+}
+
+.class .classmenu .trainer-one .trainer-details .nameDetails p{
+    font-size: 1.1rem;
+}
+
+.class .classmenu .trainer-one .trainer-details .nameDetails p span{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.class .classmenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*******************Contact Form*************/
+.contact{
+    padding: 7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.contact .form{
+    width: 45%;
+}
+
+.contact .form h2{
+    font-size: 2rem;
+    color: black;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.contact .form .submit{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contact .form .submit input, .contact .form .submit textarea{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid gray;
+    outline: none;
+    margin: 13px 0;
+}
+
+.contact .form .submit input:focus, .contact .form .submit textarea:focus{
+    border: 1px solid black;
+}
+
+.contact .form .submit input::placeholder{
+    color: darkgrey;
+    font-size: 1.1rem;
+}
+
+.contact .form .submit textarea::placeholder{
+    color: darkgrey;
+    font-size: 1.1rem;
+}
+
+.contact .form .submit a{
+    width: 100%;
+    padding: 15px 0;
+    text-decoration: none;
+    background: rgb(47, 47, 47);
+    color: white;
+    text-align: center;
+    margin: 13px 0;
+    font-size: 1.1rem;
+    border-radius: 3px;
+}
+
+.contact .map{
+    width: 45%;
+}
+
+.contact .map iframe{
+    width: 100%;
+}
+
+.contact .map h2{
+    font-size: 2rem;
+    color: black;
+    width: 100%;
+    padding-bottom: 30px;
+    margin-top: 10px;
+}
+
+
+
+/*************Footer Section******************/
+.footer{
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    background: rgb(66, 65, 65);
+    text-align: center;
+}
+
+
+/*****************Menu Bar*********************/
+#menu-bar{
+    color: orangered;
+    font-size: 25px;
+    display: none;
+}
+
+/***************Media Query**************************/
+@media screen and (max-width: 1042px){
+    .nav{
+        padding: 1rem 4.5rem;
+    }
+    
+    .nav h1{
+        font-size: 1.4rem;
+    }
+
+    #item li{
+        padding-right: 30px;
+    }
+    
+    #item li a{
+        font-size: 0.9rem;
+    }
+       
+    #item .icon i{
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width:991px){
+    .nav{   
+        padding: 1rem 3rem;
+    }
+    
+    .nav h1{
+        font-size: 1.5rem;
+    }
+      
+    #item{     
+        flex-direction: column;
+        text-align: center;
+        width: 300px;
+        height: 80vh;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        background: rgb(0, 0, 0, 0.8);
+        z-index: 10000;
+        margin-top: 4.2rem;
+        transition: 0.5s;
+    }
+    
+    #item li{
+        padding-right: 0;
+        padding: 4px 0;
+
+    }
+    
+    #item li a{     
+        font-size: 1.2rem;
+    }
+    
+    #item .icon{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #item .icon i{
+        padding: 0 15px 0 15px;
+    }
+
+    #menu-bar{
+        display: initial;
+        cursor: pointer;
+    }
+
+
+    .img-text p{
+        font-size: 1.1rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .img-text h2{
+        font-size: 2rem;
+    }
+    
+    .img-text .btn{
+        margin-top: 2rem;
+    }
+    
+    .img-text .btn a{
+        font-size: 0.9rem;
+        padding: 0.7rem 1.4rem;
+    }    
+    
+    .details{
+        padding: 6rem 7rem;
+    }
+    
+    .details h3,h5,h6{
+        color: white;
+    }
+    
+    .details .one{
+        width: 50%;
+    }
+    
+    .details .one h3{
+        font-size: 1.6rem;
+        padding-bottom: 1rem;
+    }
+    
+    .details .one h6{
+        font-size: 1.1rem;
+    }
+    
+    .details .one a{
+        font-size: 1rem;
+    
+    }
+
+    .details .two{
+        padding-left: 3.5rem;
+    }
+    
+    .details .two h3{
+        font-size: 1.9rem;
+    }
+    
+    .details .two h5{
+        font-size: 1rem;
+    }
+    
+    .details .two p{
+        font-size: 1rem;
+    }
+
+    .trainer{
+        padding: 6rem 7rem;
+    }
+        
+    .trainer .about h2{
+        font-size: 2rem;
+        padding-bottom: 1.4rem;
+    }
+    
+    .trainer .about p{
+        font-size: 1rem;
+    }
+    
+    .trainer .people .trainer-one{
+        width: 48%;
+    }
+       
+    .trainer .people .trainer-one .name{
+        padding: 5px 15px 0 15px;
+    }
+    .trainer .people .trainer-one .name h4{
+        font-size: 1rem;
+    }
+    
+    .trainer .people .trainer-one .name i{
+        font-size: 1.1rem;
+    }
+    
+    .class{
+        padding: 5rem;
+    }
+    
+    .class .paragraph{
+        font-size: 1.1rem;
+        padding: 4px;
+    }
+    
+    .class .heading{
+        font-size: 2rem;
+        padding-bottom: 30px;
+    }
+
+    .class .classmenu .trainer-one .name{
+        padding: 5px 15px 0px 15px;
+    }
+    
+    /* .class .classmenu .trainer-one .name h4{
+        font-size: 1.2rem;
+    } */
+    
+    /* .class .classmenu .trainer-one .name i{
+        font-size: 1.3rem;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+    } */
+    
+    .class .classmenu .trainer-one .trainer-details{
+        padding-bottom: 7px;
+    }
+    
+    /* .class .classmenu .trainer-one .trainer-details .name{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    } */
+    
+    .class .classmenu .trainer-one .trainer-details .nameDetails h4{
+        font-size: 1.3rem;
+    }
+    
+    .class .classmenu .trainer-one .trainer-details .nameDetails p{
+        font-size: 0.8rem;
+    }
+    
+    .class .classmenu .trainer-one .trainer-details .nameDetails p span{
+        font-size: 1rem;
+    }
+    
+    .contact{
+        padding: 6rem;
+    }
+      
+    .contact .form h2{
+        font-size: 2rem;
+        padding-bottom: 7px;
+    }
+
+    .contact .form .submit input, .contact .form .submit textarea{
+        padding: 12px;
+        margin: 10px 0;
+    }
+   
+    .contact .form .submit input::placeholder{
+        font-size: 1rem;
+    }
+    
+    .contact .form .submit textarea::placeholder{
+        font-size: 1rem;
+    }
+    
+    .contact .form .submit a{
+        padding: 13px 0;
+        margin: 10px 0;
+        font-size: 1rem;
+    }
+    
+    .contact .map{
+        width: 45%;
+    }
+
+   .contact .map h2{
+        font-size: 2.2rem;
+        padding-bottom: 20px;
+        margin-top: 3px;
+    }
+
+    .footer{
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:768px){ 
+       
+    .nav h1{
+        font-size: 1.5rem;
+    }
+
+    .back-img{
+        background-position: center;
+    }
+      
+    .img-text p{
+        font-size: 1.1rem;
+        margin-bottom: 1.1rem;
+    }
+    
+    .img-text h2{
+        font-size: 2.1rem;
+    }
+    
+    .img-text .btn{
+        margin-top: 1rem;
+    }
+
+    .details{
+        padding: 5rem 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .details .one{
+        width: 70%;
+    }
+
+    .details .one a{
+        font-size: 1rem;
+    }
+
+    .details .two{
+        padding-left: 0;
+        border-left: 0;
+        border-top: 1px solid #666262;
+        width: 70%;
+        margin-top: 1.7rem;
+        padding-top: 1.7rem;
+
+    }
+    
+    .trainer{
+        padding: 5rem 2rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .trainer .about{
+        width: 70%;
+        margin-bottom: 1.7rem;
+    }
+
+    .trainer .people{
+        width: 70%;
+    }
+          
+    .class{
+        padding: 5rem;
+    }
+    
+    .class .classmenu{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .class .classmenu .trainer-one{
+        width: 65%;
+        margin-bottom: 20px;
+    }
+   
+    .contact{
+        padding: 5rem 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contact .form {
+        width: 70%;
+        margin-bottom: 1.5rem;
+    }
+    .contact .form h2{
+        font-size: 2.2rem;
+        padding-bottom: 7px;
+    }
+ 
+    .contact .map{
+        width: 60%;
+    }
+
+   .contact .map h2{
+        font-size: 2.2rem;
+        padding-bottom: 20px;
+        margin-top: 3px;
+    }
+
+    .footer{
+        padding: 9px;
+        font-size: 14px;
+    }  
+   
+}
+
+@media screen and (max-width:496px){
+    
+    .img-text p{
+        margin-bottom: 0.8rem;
+    }
+    
+    .img-text h2{
+        font-size: 1.8rem;
+    }
+    
+    .img-text .btn{
+        margin-top: 1rem;
+    }
+
+    .details{
+        padding: 4rem 1rem;
+    }
+
+    .details .one{
+        width: 100%;
+    }
+
+    .details .two{
+        width: 100%;
+    }
+    
+    .trainer{
+        padding: 4rem 1rem;
+    }
+
+    .trainer .about h2{
+        font-size: 1.9rem;
+    }
+
+    .trainer .about{
+        width: 100%;
+    }
+
+    .trainer .people{
+        width: 80%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .trainer .people .trainer-one{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+          
+    .class{
+        padding: 4rem 1rem;
+    }
+    
+    .class .classmenu .trainer-one{
+        width: 100%;
+    }
+   
+    .contact{
+        padding: 4rem 1rem;
+    }
+    
+    .contact .form {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+     .contact .form h2{
+        font-size: 2.1rem;
+     }
+    .contact .map{
+        width: 100%;
+    }
+
+   .contact .map h2{
+        font-size: 2.2rem;
+        padding-bottom: 20px;
+        margin-top: 3px;
+    }
+
+    .footer{
+        padding: 9px;
+        font-size: 13px;
+    }
+}
